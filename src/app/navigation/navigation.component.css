@@ -1,0 +1,25 @@
+.main-nav {
+    background: #6f5499;
+    height: 50px;
+    min-height: 50px;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  .nav > li > a {
+    color: #fff;
+  }
+  
+  .nav > li.active,
+  .nav > li > a:hover,
+  .nav > li > a:focus,
+  .nav .open > a,
+  .nav .open > a:hover,
+  .nav .open > a:focus {
+    color: #fff;
+    background-color: #777;
+  }
+  
+  .navbar-brand-my {
+    color: #fff;
+  }

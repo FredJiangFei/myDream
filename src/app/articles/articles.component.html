@@ -1,0 +1,9 @@
+<p>
+  articles works!
+</p>
+
+<ul>
+  <app-article-row *ngFor="let article of articles; let num = index" 
+  [article]="article" [num]="num" (like)="like($event)">
+  </app-article-row>
+</ul>

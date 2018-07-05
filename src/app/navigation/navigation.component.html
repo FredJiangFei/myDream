@@ -1,0 +1,32 @@
+<!-- 顶部导航 -->
+<div class="navbar navbar-fixed-top main-nav" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button #button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse" (click)="toggle(button)">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a routerLink="" class="navbar-brand navbar-brand-my">
+        My Dream
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-responsive-collapse" aria-expanded="false">
+      <ul class="nav navbar-nav navbar-right">
+        <li routerLinkActive="active">
+          <a routerLink="login">{{'app.login' | translate}}</a>
+        </li>
+        <li routerLinkActive="active" *ngIf="authService.isLogin()">
+            <a (click)="logout()" href="#">Logout</a>
+          </li>
+        <li routerLinkActive="active" *ngIf="authService.isLogin()">
+          <a routerLink="members">Members</a>
+        </li>
+        <li routerLinkActive="active" *ngIf="authService.isLogin()">
+          <a routerLink="articles">Articles</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
