@@ -10,7 +10,7 @@ export class ArticleRowComponent implements OnInit {
   @HostBinding('attr.class') cssClass = 'item';
   @Input() article: Article;
   @Input() num: Number;
-  @Output() public like = new EventEmitter<string>();
+  @Output() public like = new EventEmitter<Article>();
 
   constructor() { }
 
@@ -18,6 +18,6 @@ export class ArticleRowComponent implements OnInit {
   }
 
   likeArticle() {
-    this.like.emit(this.article.title);
+    this.like.emit(this.article);
   }
 }

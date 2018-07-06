@@ -17,8 +17,8 @@
         <li routerLinkActive="active">
           <a routerLink="login">{{'app.login' | translate}}</a>
         </li>
-        <li routerLinkActive="active" *ngIf="authService.isLogin()">
-            <a (click)="logout()" href="#">Logout</a>
+        <li routerLinkActive="active">
+            <a routerLink="register" href>Register</a>
           </li>
         <li routerLinkActive="active" *ngIf="authService.isLogin()">
           <a routerLink="members">Members</a>

@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
+      console.log('loging...');
       this.authService.login();
       let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl');
       this.router.navigate([returnUrl || '/']);

@@ -1,3 +1,6 @@
+import { Article } from './models/article';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddArticleComponent } from './articles/add-article/add-article.component';
 import { ArticleRowComponent } from './articles/article-row/article-row.component';
 import { ArticleService } from './common/services/article.service';
 import { ArticleComponent } from './articles/article/article.component';
@@ -16,7 +19,6 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { RegisterComponent } from './user/register/register.component';
 import { LoginComponent } from './user/login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { PostsComponent } from './posts/posts.component';
 import { MembersComponent } from './members/members.component';
@@ -39,7 +41,8 @@ export function createTranslateLoader(http: Http) {
     ArticleComponent,
     NavigationComponent,
     BreadcrumbsComponent,
-    ArticleRowComponent
+    ArticleRowComponent,
+    AddArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -51,14 +54,27 @@ export function createTranslateLoader(http: Http) {
     }),
     SharedModule,
     RouterModule.forRoot(appRoutes),
-    HttpModule,
+    HttpModule
   ],
   providers: [
     PostService,
     MemberService,
     AuthService,
-    ArticleService,
     { provide: ErrorHandler, useClass: AppErrorHandler },
+    { provide: 'API_URL', useValue: 'http://my.api.com/v1' },
+    {
+      provide: ArticleService,
+      deps: [Http, 'API_URL'],
+      useFactory: (http: Http, apiUrl: string) => {
+        const analytics = {
+          recordEvent: (article: Article) => {
+            console.log(article.title);
+            console.log(apiUrl);
+          }
+        }
+        return new ArticleService(analytics);
+      }
+    },
     AuthGurd
   ],
   bootstrap: [AppComponent]

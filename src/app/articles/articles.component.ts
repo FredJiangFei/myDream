@@ -1,7 +1,7 @@
 import { TabbedReport } from './../models/tabbedReport';
 import { ArticleService } from './../common/services/article.service';
 import { Article } from './../models/article';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Report } from '../models/report';
 
 @Component({
@@ -11,7 +11,8 @@ import { Report } from '../models/report';
 })
 export class ArticlesComponent implements OnInit {
   articles: Article[];
-  constructor(private articleService: ArticleService) {
+  constructor(private articleService: ArticleService, @Inject('API_URL') apiUrl: string) {
+
   }
 
   ngOnInit() {
@@ -30,7 +31,8 @@ export class ArticlesComponent implements OnInit {
     t.run();
   }
 
-  like(articleTitle) {
-    console.log(`${articleTitle} liked`);
+  like(article: Article) {
+    console.log(`${article.title} liked`);
+    this.articleService.recordEvent(article);
   }
 }

@@ -9,7 +9,6 @@ export class TabbedReport extends Report{
     }
 
     run(){
-        console.log(this.headers);
         super.run();
     }
 }

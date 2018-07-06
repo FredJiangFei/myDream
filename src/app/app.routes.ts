@@ -1,17 +1,18 @@
+import { AddArticleComponent } from './articles/add-article/add-article.component';
 import { ArticleComponent } from './articles/article/article.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { MembersComponent } from './members/members.component';
 import { AuthGurd } from './common/guards/auth-gurd';
 import { PostsComponent } from './posts/posts.component';
 import { Component } from '@angular/core';
-import { LoginComponent} from './user/login/login.component';
-import { RegisterComponent} from './user/register/register.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
 
 export const appRoutes = [
   {
     path: '',
-    pathMatch:'full',
-    redirectTo:'articles'
+    pathMatch: 'full',
+    redirectTo: 'articles'
   },
   {
     path: 'login',
@@ -33,12 +34,14 @@ export const appRoutes = [
   },
   {
     path: 'articles',
-    component: ArticlesComponent,
-    // canActivate: [AuthGurd] 
+    component: ArticlesComponent
   },
   {
     path: 'article/:id',
-    component: ArticleComponent,
-    // canActivate: [AuthGurd] 
+    component: ArticleComponent
+  },
+  {
+    path: 'articles/add',
+    component: AddArticleComponent
   }
 ];
