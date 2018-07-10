@@ -1,7 +1,7 @@
+import { User } from './../../models/user-model';
 import { UsernameValidators, PasswordValidators } from './register.validators';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { User } from '../model/user-model';
 
 @Component({
   selector: 'app-register',

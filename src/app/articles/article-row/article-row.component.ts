@@ -1,4 +1,4 @@
-import { Article } from './../../models/article';
+import { Article } from './../article';
 import { Component, OnInit, Input, Output, HostBinding, EventEmitter } from '@angular/core';
 
 @Component({

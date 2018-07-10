@@ -1,6 +1,6 @@
 <li  [ngClass]="{borderd: true}">
   {{num+1}}.
-  <a [routerLink]="['/article', article.id]">
+  <a [routerLink]="['./', article.id]">
     {{article.title}}
   </a>
   <i (click)="likeArticle()"

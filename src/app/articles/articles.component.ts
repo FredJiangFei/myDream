@@ -1,6 +1,6 @@
+import { ArticleService } from './article.service';
+import {Article } from './article'
 import { TabbedReport } from './../models/tabbedReport';
-import { ArticleService } from './../common/services/article.service';
-import { Article } from './../models/article';
 import { Component, OnInit, Inject } from '@angular/core';
 import { Report } from '../models/report';
 

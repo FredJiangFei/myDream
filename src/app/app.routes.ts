@@ -1,6 +1,3 @@
-import { AddArticleComponent } from './articles/add-article/add-article.component';
-import { ArticleComponent } from './articles/article/article.component';
-import { ArticlesComponent } from './articles/articles.component';
 import { MembersComponent } from './members/members.component';
 import { AuthGurd } from './common/guards/auth-gurd';
 import { PostsComponent } from './posts/posts.component';
@@ -24,8 +21,7 @@ export const appRoutes = [
   },
   {
     path: 'posts',
-    component: PostsComponent,
-    // canActivate: [AuthGurd] 
+    component: PostsComponent
   },
   {
     path: 'members',
@@ -34,14 +30,14 @@ export const appRoutes = [
   },
   {
     path: 'articles',
-    component: ArticlesComponent
+    loadChildren:'./articles/article.module#ArticleModule'
   },
-  {
-    path: 'article/:id',
-    component: ArticleComponent
-  },
-  {
-    path: 'articles/add',
-    component: AddArticleComponent
-  }
+  // {
+  //   path: 'article/:id',
+  //   component: ArticleComponent
+  // },
+  // {
+  //   path: 'articles/add',
+  //   component: AddArticleComponent
+  // }
 ];
