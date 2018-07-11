@@ -1,0 +1,12 @@
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\bin\Debug\netcoreapp2.0\PowerOfDream.Domain.Core.dll
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\obj\Debug\netcoreapp2.0\PowerOfDream.Domain.csprojResolveAssemblyReference.cache
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\obj\Debug\netcoreapp2.0\PowerOfDream.Domain.csproj.CoreCompileInputs.cache
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\obj\Debug\netcoreapp2.0\PowerOfDream.Domain.AssemblyInfoInputs.cache
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\obj\Debug\netcoreapp2.0\PowerOfDream.Domain.AssemblyInfo.cs
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\bin\Debug\netcoreapp2.0\PowerOfDream.Domain.deps.json
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\bin\Debug\netcoreapp2.0\PowerOfDream.Domain.dll
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\bin\Debug\netcoreapp2.0\PowerOfDream.Domain.pdb
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\bin\Debug\netcoreapp2.0\PowerOfDream.Domain.Core.pdb
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\obj\Debug\netcoreapp2.0\PowerOfDream.Domain.csproj.CopyComplete
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\obj\Debug\netcoreapp2.0\PowerOfDream.Domain.dll
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Domain\obj\Debug\netcoreapp2.0\PowerOfDream.Domain.pdb

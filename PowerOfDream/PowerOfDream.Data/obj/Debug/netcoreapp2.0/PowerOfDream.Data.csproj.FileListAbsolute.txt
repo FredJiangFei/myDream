@@ -1,0 +1,12 @@
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\bin\Debug\netcoreapp2.0\PowerOfDream.Data.deps.json
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\bin\Debug\netcoreapp2.0\PowerOfDream.Data.dll
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\bin\Debug\netcoreapp2.0\PowerOfDream.Data.pdb
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\obj\Debug\netcoreapp2.0\PowerOfDream.Data.csproj.CoreCompileInputs.cache
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\obj\Debug\netcoreapp2.0\PowerOfDream.Data.AssemblyInfoInputs.cache
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\obj\Debug\netcoreapp2.0\PowerOfDream.Data.AssemblyInfo.cs
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\obj\Debug\netcoreapp2.0\PowerOfDream.Data.dll
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\obj\Debug\netcoreapp2.0\PowerOfDream.Data.pdb
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\obj\Debug\netcoreapp2.0\PowerOfDream.Data.csprojResolveAssemblyReference.cache
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.Relational.xml
+C:\MySolutions\my-dream\PowerOfDream\PowerOfDream.Data\obj\Debug\netcoreapp2.0\PowerOfDream.Data.csproj.CopyComplete
