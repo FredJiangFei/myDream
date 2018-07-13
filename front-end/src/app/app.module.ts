@@ -43,7 +43,7 @@ export function createTranslateLoader(http: Http) {
     }),
     BrowserModule,
     SharedModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     PostService,

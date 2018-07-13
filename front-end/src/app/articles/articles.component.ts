@@ -1,5 +1,6 @@
+import { Observable } from 'rxjs/Rx';
 import { ArticleService } from './article.service';
-import {Article } from './article'
+import { Article } from './article'
 import { TabbedReport } from './../models/tabbedReport';
 import { Component, OnInit, Inject } from '@angular/core';
 import { Report } from '../models/report';
@@ -18,6 +19,10 @@ export class ArticlesComponent implements OnInit {
   ngOnInit() {
     this.getAllArticles();
     this.runReport();
+  }
+
+  getGitHubUsers() {
+    
   }
 
   getAllArticles() {

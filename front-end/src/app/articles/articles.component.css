@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+  }
+  .flex-item1{flex-grow: 0; order: 10;}
+  .flex-item2{flex-grow: 1;order:2;}
+  .flex-item3{flex-grow: 2;}
+  /* 以下为辅助样式 */
+  
+  .flex-container{ 
+    width:180px;
+    padding:10px;
+    background-color: #F0f0f0; 
+  }
+  .flex-container .flex-item{
+    padding:20px 0;
+    text-align: center;
+    width:30px;
+    background-color: #B1FF84; 
+  }
+  .flex-container .flex-item:first-child{ 
+    background-color: #F5DE25; 
+  }
+  .flex-container .flex-item:last-child{ 
+    background-color: #90D9F7; 
+  }

@@ -19,3 +19,4 @@ html {
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~jquery-ui-dist/jquery-ui.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
