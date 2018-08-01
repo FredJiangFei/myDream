@@ -1,0 +1,41 @@
+@model IEnumerable<PowerOfDream.Domain.InventoryItemListDto>
+
+@{
+    ViewData["Title"] = "Customer Management";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <div class="pull-left">
+                <a asp-action="Create" class="btn btn-primary">
+                     Register New
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="panel panel-default">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
